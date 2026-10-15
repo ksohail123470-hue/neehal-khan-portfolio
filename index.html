@@ -55,8 +55,8 @@ footer{padding:28px 0;display:flex;justify-content:space-between;gap:12px;color:
 <div class="hero-art">
 <div class="orbit-ring"></div><span class="orbit-dot"></span><span class="spark s1">✳</span><span class="spark s2">✦</span>
 <div class="hero-photo-wrap">
-<img class="hero-photo-back" src="assets/neehal-kuala-lumpur.jpg" alt="" aria-hidden="true">
-<img class="hero-photo" src="assets/neehal-kuala-lumpur.jpg" alt="Neehal Khan standing in front of the Petronas Towers">
+<img class="hero-photo-back" src="neehal-kuala-lumpur.jpg" alt="" aria-hidden="true">
+<img class="hero-photo" src="neehal-kuala-lumpur.jpg" alt="Neehal Khan standing in front of the Petronas Towers">
 <span class="image-badge">N / K — VISUAL FILE 001</span><span class="image-index">KUALA LUMPUR<br>03°09' N</span>
 </div>
 </div>
@@ -70,9 +70,9 @@ footer{padding:28px 0;display:flex;justify-content:space-between;gap:12px;color:
 <section class="wrap section reveal" id="gallery">
 <div class="section-head"><div><div class="eyebrow">02 / THE VISUAL ARCHIVE</div><h2>Different frames.<br><em>Same signal.</em></h2></div><p class="section-note">Tap any photograph to open the immersive viewer. Portraits use matching vertical proportions so the photos stay framed naturally without awkward cropping.</p></div>
 <div class="gallery">
-<article class="photo-card" role="button" tabindex="0" data-photo="0" aria-label="Open Kuala Lumpur photo"><img src="assets/neehal-kuala-lumpur.jpg" alt="Neehal posing in front of the Petronas Towers at night" loading="lazy"><span class="expand">↗</span><div class="photo-meta"><div class="num">VISUAL FILE / 001</div><h3>Night architecture.</h3><p>KUALA LUMPUR · AFTER DARK</p></div></article>
-<article class="photo-card" role="button" tabindex="0" data-photo="1" aria-label="Open Hanoi street-style photo"><img src="assets/neehal-hanoi-01.jpg" alt="Neehal in a street-style jacket in Hanoi" loading="lazy"><span class="expand">↗</span><div class="photo-meta"><div class="num">VISUAL FILE / 002</div><h3>Off-duty mode.</h3><p>HANOI · STREET EDIT</p></div></article>
-<article class="photo-card" role="button" tabindex="0" data-photo="2" aria-label="Open second Hanoi street-style photo"><img src="assets/neehal-hanoi-02.jpg" alt="Neehal in a second street-style pose in Hanoi" loading="lazy"><span class="expand">↗</span><div class="photo-meta"><div class="num">VISUAL FILE / 003</div><h3>Quiet confidence.</h3><p>HANOI · FRAME TWO</p></div></article>
+<article class="photo-card" role="button" tabindex="0" data-photo="0" aria-label="Open Kuala Lumpur photo"><img src="neehal-kuala-lumpur.jpg" alt="Neehal posing in front of the Petronas Towers at night" loading="lazy"><span class="expand">↗</span><div class="photo-meta"><div class="num">VISUAL FILE / 001</div><h3>Night architecture.</h3><p>KUALA LUMPUR · AFTER DARK</p></div></article>
+<article class="photo-card" role="button" tabindex="0" data-photo="1" aria-label="Open Hanoi street-style photo"><img src="neehal-hanoi-01.jpg" alt="Neehal in a street-style jacket in Hanoi" loading="lazy"><span class="expand">↗</span><div class="photo-meta"><div class="num">VISUAL FILE / 002</div><h3>Off-duty mode.</h3><p>HANOI · STREET EDIT</p></div></article>
+<article class="photo-card" role="button" tabindex="0" data-photo="2" aria-label="Open second Hanoi street-style photo"><img src="neehal-hanoi-02.jpg" alt="Neehal in a second street-style pose in Hanoi" loading="lazy"><span class="expand">↗</span><div class="photo-meta"><div class="num">VISUAL FILE / 003</div><h3>Quiet confidence.</h3><p>HANOI · FRAME TWO</p></div></article>
 </div>
 </section>
 <section class="wrap section reveal" id="frequency">
@@ -105,7 +105,7 @@ footer{padding:28px 0;display:flex;justify-content:space-between;gap:12px;color:
 <footer class="wrap"><span>© <span id="year"></span> NEEHAL KHAN / SIGNALVERSE</span><a class="back-top" href="#top">BACK TO TOP ↑</a></footer>
 <div class="modal" id="photo-modal" aria-modal="true" role="dialog" aria-label="Photo viewer">
 <button class="modal-close" type="button" aria-label="Close photo viewer">×</button><button class="modal-prev" type="button" aria-label="Previous photo">←</button><button class="modal-next" type="button" aria-label="Next photo">→</button>
-<div class="modal-inner"><div class="modal-visual"><img id="modal-image" src="assets/neehal-kuala-lumpur.jpg" alt="Neehal Khan photograph"></div><div class="modal-copy"><div class="eyebrow" id="modal-kicker">VISUAL FILE / 001</div><h3 id="modal-title">Night architecture.</h3><p id="modal-description">Kuala Lumpur · After dark</p><div class="tag-row"><span class="tag">VISUAL ARCHIVE</span><span class="tag">N / K</span></div></div></div>
+<div class="modal-inner"><div class="modal-visual"><img id="modal-image" src="neehal-kuala-lumpur.jpg" alt="Neehal Khan photograph"></div><div class="modal-copy"><div class="eyebrow" id="modal-kicker">VISUAL FILE / 001</div><h3 id="modal-title">Night architecture.</h3><p id="modal-description">Kuala Lumpur · After dark</p><div class="tag-row"><span class="tag">VISUAL ARCHIVE</span><span class="tag">N / K</span></div></div></div>
 </div>
 <script>
 document.getElementById('year').textContent=new Date().getFullYear();
@@ -123,9 +123,9 @@ const m=modes[btn.dataset.mode];document.getElementById('mode-kicker').textConte
 document.getElementById('mode-tags').innerHTML=m.tags.map(t=>'<span class="tag">'+t+'</span>').join('');
 }));
 const photos=[
-{src:'assets/neehal-kuala-lumpur.jpg',title:'Night architecture.',desc:'Kuala Lumpur · After dark',kicker:'VISUAL FILE / 001'},
-{src:'assets/neehal-hanoi-01.jpg',title:'Off-duty mode.',desc:'Hanoi · Street edit',kicker:'VISUAL FILE / 002'},
-{src:'assets/neehal-hanoi-02.jpg',title:'Quiet confidence.',desc:'Hanoi · Frame two',kicker:'VISUAL FILE / 003'}
+{src:'neehal-kuala-lumpur.jpg',title:'Night architecture.',desc:'Kuala Lumpur · After dark',kicker:'VISUAL FILE / 001'},
+{src:'neehal-hanoi-01.jpg',title:'Off-duty mode.',desc:'Hanoi · Street edit',kicker:'VISUAL FILE / 002'},
+{src:'neehal-hanoi-02.jpg',title:'Quiet confidence.',desc:'Hanoi · Frame two',kicker:'VISUAL FILE / 003'}
 ];
 const modal=document.getElementById('photo-modal');let currentPhoto=0;
 function showPhoto(n){currentPhoto=(n+photos.length)%photos.length;const p=photos[currentPhoto];document.getElementById('modal-image').src=p.src;document.getElementById('modal-title').textContent=p.title;document.getElementById('modal-description').textContent=p.desc;document.getElementById('modal-kicker').textContent=p.kicker}
